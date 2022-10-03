@@ -1,0 +1,187 @@
+/*All Made For WebCoders, By Neksha DeSilva www.github.com/nekshadesilva*/
+body{
+    background-color:  rgb(37, 37, 37);
+    background-image: url(../img/YdBO.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    animation: bacc 5s infinite;
+}
+.box{
+    width:30rem;
+    height: 80vh;
+    background-color: rgba(8, 134, 75, 0.884);
+    border-radius: 2vh;
+    border-top: 1rem solid rgb(12, 12, 12);
+    transition: 1s;
+    
+}
+.boxc{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.song{
+    font-size: 250%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 12, 12);
+}
+.artist{
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 12, 12);
+}
+.lineend{
+   border-color: rgb(37, 37, 37);
+    border-radius: 1rem;
+    width: 80%;
+}
+.musicimg{
+    width: 30vh;
+    height: 50vh;
+    background-color:rgb(228, 228, 228);
+    border-radius: 2rem;
+    background-image: url(../img/roberto-nickson-5ui0tfMC5ts-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+}
+.box:hover{
+    transition: 1s;
+    animation: boxsha 2s infinite;
+   
+}
+.box:hover h1{
+    
+    animation: textsha 2s infinite;
+}
+.box:hover span{
+    
+    animation: textsha 2s infinite;
+}
+.box:hover hr{
+   
+    animation:hrsha 2s infinite;
+}
+.box:hover .musicimg{
+    animation: imgsha 2s infinite;
+}
+@keyframes boxsha {
+    0%{
+        
+    }
+    50%{
+        box-shadow: 0 0 10vh rgb(0, 0, 0);
+        transform: scale(.9);
+        background-color: transparent;
+        color: rgb(8, 134, 75);
+        border-color: transparent;
+    }
+   
+}
+@keyframes textsha {
+    0%{
+        color: rgb(10, 10, 10);
+    }
+    50%{
+        
+        color: rgb(8, 134, 75);
+        
+    }
+    100%{
+        color: rgb(10, 10, 10);
+    }
+}
+@keyframes hrsha {
+    0%{
+        border-color: rgb(10, 10, 10);
+    }
+    50%{
+        
+        border-color: rgb(8, 134, 75);
+        
+    }
+    100%{
+        border-color: rgb(10, 10, 10);
+    }
+}
+@keyframes imgsha {
+    0%{
+        
+    }
+    50%{
+        
+        background-image:linear-gradient(rgba(151, 19, 19, 0.24),rgba(0, 0, 0, 0.589)), url(../img/roberto-nickson-5ui0tfMC5ts-unsplash.jpg);
+        
+    }
+   
+}
+.playbtn{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(8, 134, 75, 0.884);
+    border-radius: 100%;
+    transition: 1s;
+    cursor: pointer;
+    border: 0;
+    background-image: url(../img/slow_motion_video_FILL0_wght400_GRAD0_opsz48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.playbtn:focus{
+    
+    outline:3rem solid rgb(8, 134, 75);
+    border: 0;
+    outline-offset: -2rem;
+}
+::selection{
+    background-color: rgba(8, 134, 75, 0.884);
+    color: black;
+}
+.special{
+    background-color: transparent;
+    border-radius: .6vh;
+    padding: 1vh;
+    color: silver;
+    animation: colorr 2s infinite;
+}
+@keyframes colorr {
+    0%{
+        color: black;
+
+    }
+    50%{
+        color: silver;
+      
+    }
+    100%{
+        color: black;
+    }
+}
+.webc{
+    width:  5vh;
+    height: 5vh;
+    background-image: url(../img/Untitled-1.png);
+    border-radius: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: fixed;
+}
+@keyframes bacc {
+    0%{
+        background-color: rgb(37, 37, 37);
+    }
+    50%{
+        background-color: rgb(189, 63, 13);
+    }
+    100%{
+        background-color: rgb(37, 37, 37);
+    }
+}
